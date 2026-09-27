@@ -41,3 +41,6 @@ function dividir() {
     let b = Number(document.getElementById("num2").value);
     document.getElementById("resultado").textContent = "Resultado: " + (a / b);
 }
+function saludar() {
+    document.getElementById("saludo").textContent = "¡Hola Emanuel, vas muy bien!";
+}
