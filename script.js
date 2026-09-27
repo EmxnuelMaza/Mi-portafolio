@@ -44,3 +44,10 @@ function dividir() {
 function saludar() {
     document.getElementById("saludo").textContent = "¡Hola Emanuel, vas muy bien!";
 }
+let metas = ["Aprender", "Idiomas", "Trabajo", "viajes"];
+
+for (let i = 0; i < metas.length; i++) {
+    let nuevoLi = document.createElement("li");
+    nuevoLi.textContent = metas[i];
+    document.getElementById("listaMetas").appendChild(nuevoLi);
+}
