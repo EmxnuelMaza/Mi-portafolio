@@ -51,3 +51,13 @@ for (let i = 0; i < metas.length; i++) {
     nuevoLi.textContent = metas[i];
     document.getElementById("listaMetas").appendChild(nuevoLi);
 }
+function agregarMeta() {
+    let texto = document.getElementById("nuevaMeta").value;
+
+    if (texto !== "") {
+        let nuevoLi = document.createElement("li");
+        nuevoLi.textContent = texto;
+        document.getElementById("listaMetas").appendChild(nuevoLi);
+        document.getElementById("nuevaMeta").value = "";
+    }
+}
